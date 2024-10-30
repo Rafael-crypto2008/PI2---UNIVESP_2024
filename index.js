@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Conectar ao MongoDB
 mongoose.connect(
-    "mongodb+srv://mathvierabarbosa:ZZdBlxVil27bv23k@cluster0.yfmey.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+   "mongodb+srv://mathvierabarbosa:ZZdBlxVil27bv23k@cluster0.yfmey.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     , { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Conectado ao MongoDB'))
   .catch(err => console.log('Erro ao conectar ao MongoDB:', err));
