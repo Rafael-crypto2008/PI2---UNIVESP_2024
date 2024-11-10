@@ -5,12 +5,11 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
 
 // Conectar ao MongoDB
 mongoose.connect(
@@ -20,7 +19,7 @@ mongoose.connect(
   .catch(err => console.log('Erro ao conectar ao MongoDB:', err));
 
 // Importar rotas
-const appointmentRoutes = require('./routes/routes');
+const appointmentRoutes = require('../routes/routes');
 app.use('/api', appointmentRoutes);
 
 // Rota para servir a landing page
