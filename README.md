@@ -12,4 +12,5 @@ http://localhost:3000/admin <br/>
 
 npm install serve para baixar os pacotes necessarios<br/>
 npm run dev serve para rodar a aplicação<br/>
-
+E para acessar o link: https://barbeiro-xi.vercel.app/ <br/>
+E para acessar o link do adiministrador: https://barbeiro-xi.vercel.app/admin.html<br/>
