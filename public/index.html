@@ -12,16 +12,16 @@
 </head>
 
 <body>
-    <header class="main-header">
+    <header class="main-header" id="home">
         <nav>
-            <img src=".\Logo\Barbearia Vetorizado.png" alt="" width=140 height=160></h1>
+            <img src=".\Logo\Barbearia Vetorizado.png" alt="" width=120 height=160></h1>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Loja</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#loja">Produtos</a></li>
+                <li><a href="#sobre">Localização</a></li>
             </ul>
-            <button class="contact-button">Contato</button>
+            <button class="contact-button" onclick="window.location.href='https://wa.me/5511945660706?text=Ola%20,queria%20agendar%20com%20você'">Contato</button>
         </nav>
         <div class="hero-section">
             <div class="appointment-form">
@@ -47,7 +47,7 @@
     <!-- Lista de Preços -->
     <section class="lista-precos">
         <h2>Nossos Preços</h2>
-        <table>
+        <table id="servicos">
             <tr>
                 <th>Serviço</th>
                 <th>Preço</th>
@@ -72,26 +72,26 @@
     </section>
 
     <!-- Lista de Produtos com Cards -->
-    <section class="produtos-cards">
+    <section class="produtos-cards" id="loja">
         <h2>Produtos Disponíveis</h2>
         <div class="produtos-container">
             <div class="produto-card">
-                <img src="https://images.pexels.com/photos/946222/pexels-photo-946222.jpeg" alt="Gel Fixador">
+                <img src="./Logo/foto1.png" alt="Gel Fixador">
                 <h3>Gel Fixador 500 g</h3>
                 <p>R$ 18,00</p>
             </div>
             <div class="produto-card">
-                <img src="https://images.pexels.com/photos/3951872/pexels-photo-3951872.jpeg" alt="Pós-Barba">
+                <img src="./Logo/foto2.png" alt="Pós-Barba">
                 <h3>Pós-Barba</h3>
                 <p>R$ 25,00</p>
             </div>
             <div class="produto-card">
-                <img src="https://images.pexels.com/photos/1242213/pexels-photo-1242213.jpeg" alt="Shampoo para Barba">
+                <img src="./Logo/foto2.png" alt="Shampoo para Barba">
                 <h3>Shampoo para Barba</h3>
                 <p>R$ 35,00</p>
             </div>
             <div class="produto-card">
-                <img src="./images/" alt="Óleo para Barba">
+                <img src="./Logo/foto2.png" alt="Óleo para Barba">
                 <h3>Óleo para Barba</h3>
                 <p>R$ 45,00</p>
             </div>
@@ -99,11 +99,11 @@
     </section>
 
     <!-- Localização com Google Maps -->
-    <section class="localizacao">
+    <section class="localizacao" id="sobre">
         <h2>Localização</h2>
-        <p>Rua Lorem Ipsum 324, São Paulo, SP</p>
+        <p>Rua Piastra 92 - Jardim Cruzeiro, Itapevi, SP</p>
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2854.0415222960673!2d-46.58426822579075!3d-23.48671275885181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5f0d13f4bc9%3A0xcbf483956fa14303!2sMocot%C3%B3%20Bar%20e%20Restaurante!5e1!3m2!1spt-BR!2sbr!4v1731269371328!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/place/R.+Piastra,+92+-+Jardim+Cruzeiro,+Itapevi+-+SP,+06680-649/@-23.5327535,-46.9926273,655m/data=!3m1!1e3!4m6!3m5!1s0x94cf0f661c37b8e5:0xd96010788cfb8817!8m2!3d-23.5327566!4d-46.9900443!16s%2Fg%2F11q8fkl_q9?authuser=0&entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
